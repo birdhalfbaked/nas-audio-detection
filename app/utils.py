@@ -28,10 +28,14 @@ class PhonemeTrie:
 
     def insert(self, word: str) -> None:
         phonemes = self._phonemizer(word)
+        self.insert_phoneme_path(phonemes, word)
+
+    def insert_phoneme_path(self, phonemes: list[str], terminal_label: str) -> None:
+        """Walk trie using explicit phonemes; store ``terminal_label`` at the leaf."""
         node = self._root
         for phoneme in phonemes:
             node = node.children.setdefault(phoneme, _TrieNode())
-        node.terminal_words.add(word)
+        node.terminal_words.add(terminal_label)
         self._max_word_phoneme_len = max(self._max_word_phoneme_len, len(phonemes))
 
     def insert_many(self, words: list[str]) -> None:
@@ -55,10 +59,20 @@ class PhonemeTrie:
         return trie
 
     def search(self, word: str, top_k: int = 3, beam_width: int | None = None) -> list[str]:
+        query_phonemes = self._phonemizer(word)
+        return self.search_phonemes(
+            query_phonemes, top_k=top_k, beam_width=beam_width
+        )
+
+    def search_phonemes(
+        self,
+        query_phonemes: list[str],
+        top_k: int = 3,
+        beam_width: int | None = None,
+    ) -> list[str]:
         if top_k <= 0:
             return []
 
-        query_phonemes = self._phonemizer(word)
         beam = [_BeamState(node=self._root, query_idx=0, cost=0)]
         candidates: dict[str, int] = {}
         width = beam_width if beam_width is not None else max(20, top_k * 5)

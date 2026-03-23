@@ -1,6 +1,12 @@
 import pytest
+from phonemizer.backend.espeak.espeak import EspeakBackend
 
 from app.audio.phonemes import Phonemizer
+
+pytestmark = pytest.mark.skipif(
+    not EspeakBackend.is_available(),
+    reason="espeak-ng not installed; phonemizer tests require it",
+)
 
 
 @pytest.mark.parametrize(

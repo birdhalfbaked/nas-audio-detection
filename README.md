@@ -118,6 +118,15 @@ uv run python -m app.main detect \
 
 - `app/facilities.py`
   - facility wrapper combining common + facility phraseology
+  - `latitude`, `longitude`, `aircraft_range_nm` (search radius in nautical miles) define the area for flight queries
+  - `get_bounds_from_center(...)` maps center + radius to a `FlightRadarBounds` box for the flight-data client
+  - optional flight client: `build_callsign_trie()` loads nearby traffic and builds the callsign trie
+
+- `app/callsign/`
+  - ICAO airline code → spoken name (e.g. `DAL` → `Delta`)
+  - flight-number phrasing variants: digit-by-digit (`two three two three`) vs paired (`twenty three twenty three`)
+  - `build_callsign_trie_for_aircraft(...)`: multiple phoneme paths, single canonical label (`Delta 2323`)
+  - `phonemes_from_segments(...)`: flat list from ASR phoneme segments
 
 ## Testing
 
@@ -131,6 +140,12 @@ Run specific audio tests:
 
 ```bash
 uv run --group dev pytest tests/audio/test_processor.py tests/audio/test_phrase_tagger.py
+```
+
+Facility + callsign (mocked flight client, example tower fixture):
+
+```bash
+uv run --group dev pytest tests/facility/test_lax_tower_callsign.py
 ```
 
 ## Notes
