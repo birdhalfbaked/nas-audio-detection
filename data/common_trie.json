@@ -1,0 +1,1481 @@
+{
+  "max_word_phoneme_len": 18,
+  "root": {
+    "terminal_words": [],
+    "children": {
+      "\u00e6": {
+        "terminal_words": [],
+        "children": {
+          "l": {
+            "terminal_words": [],
+            "children": {
+              "f": {
+                "terminal_words": [],
+                "children": {
+                  "\u0259": {
+                    "terminal_words": [
+                      "alpha"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          },
+          "\u027e": {
+            "terminal_words": [],
+            "children": {
+              "i": {
+                "terminal_words": [],
+                "children": {
+                  "z": {
+                    "terminal_words": [
+                      "atis"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "b": {
+        "terminal_words": [],
+        "children": {
+          "i\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "\u0250": {
+                "terminal_words": [],
+                "children": {
+                  "d": {
+                    "terminal_words": [],
+                    "children": {
+                      "v": {
+                        "terminal_words": [],
+                        "children": {
+                          "a\u026a": {
+                            "terminal_words": [],
+                            "children": {
+                              "z": {
+                                "terminal_words": [],
+                                "children": {
+                                  "d": {
+                                    "terminal_words": [
+                                      "be advised"
+                                    ],
+                                    "children": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "\u0279": {
+            "terminal_words": [],
+            "children": {
+              "\u0251\u02d0": {
+                "terminal_words": [],
+                "children": {
+                  "v": {
+                    "terminal_words": [],
+                    "children": {
+                      "o\u028a": {
+                        "terminal_words": [
+                          "bravo"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "t\u0283": {
+        "terminal_words": [],
+        "children": {
+          "\u0251\u02d0\u0279": {
+            "terminal_words": [],
+            "children": {
+              "l": {
+                "terminal_words": [],
+                "children": {
+                  "i": {
+                    "terminal_words": [
+                      "charlie"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "k": {
+        "terminal_words": [],
+        "children": {
+          "l": {
+            "terminal_words": [],
+            "children": {
+              "\u026a\u0279": {
+                "terminal_words": [],
+                "children": {
+                  "d": {
+                    "terminal_words": [],
+                    "children": {
+                      "f": {
+                        "terminal_words": [],
+                        "children": {
+                          "\u0254\u02d0\u0279": {
+                            "terminal_words": [],
+                            "children": {
+                              "t": {
+                                "terminal_words": [],
+                                "children": {
+                                  "e\u026a": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "k": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "\u0254": {
+                                            "terminal_words": [],
+                                            "children": {
+                                              "f": {
+                                                "terminal_words": [
+                                                  "cleared for takeoff"
+                                                ],
+                                                "children": {}
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "t": {
+                        "terminal_words": [],
+                        "children": {
+                          "\u0259": {
+                            "terminal_words": [],
+                            "children": {
+                              "l": {
+                                "terminal_words": [],
+                                "children": {
+                                  "\u00e6": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "n": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "d": {
+                                            "terminal_words": [
+                                              "cleared to land"
+                                            ],
+                                            "children": {}
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "\u0251\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "n": {
+                "terminal_words": [],
+                "children": {
+                  "t": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u00e6": {
+                        "terminal_words": [],
+                        "children": {
+                          "k": {
+                            "terminal_words": [],
+                            "children": {
+                              "t": {
+                                "terminal_words": [],
+                                "children": {
+                                  "\u0250": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "p": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "\u0279": {
+                                            "terminal_words": [],
+                                            "children": {
+                                              "o\u028a": {
+                                                "terminal_words": [],
+                                                "children": {
+                                                  "t\u0283": {
+                                                    "terminal_words": [
+                                                      "contact approach"
+                                                    ],
+                                                    "children": {}
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "s": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "\u025b": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "n": {
+                                            "terminal_words": [],
+                                            "children": {
+                                              "t": {
+                                                "terminal_words": [],
+                                                "children": {
+                                                  "\u025a": {
+                                                    "terminal_words": [
+                                                      "contact center"
+                                                    ],
+                                                    "children": {}
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "d": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "\u1d7b": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "p": {
+                                            "terminal_words": [],
+                                            "children": {
+                                              "\u0251\u02d0\u0279": {
+                                                "terminal_words": [],
+                                                "children": {
+                                                  "t\u0283": {
+                                                    "terminal_words": [],
+                                                    "children": {
+                                                      "\u025a": {
+                                                        "terminal_words": [
+                                                          "contact departure"
+                                                        ],
+                                                        "children": {}
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "\u0261": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "\u0279": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "a\u028a": {
+                                            "terminal_words": [],
+                                            "children": {
+                                              "n": {
+                                                "terminal_words": [],
+                                                "children": {
+                                                  "d": {
+                                                    "terminal_words": [
+                                                      "contact ground"
+                                                    ],
+                                                    "children": {}
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "t": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "a\u028a": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "\u025a": {
+                                            "terminal_words": [
+                                              "contact tower"
+                                            ],
+                                            "children": {}
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "l": {
+                "terminal_words": [],
+                "children": {
+                  "o\u028a": {
+                    "terminal_words": [
+                      "kilo"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          },
+          "w": {
+            "terminal_words": [],
+            "children": {
+              "\u1d7b": {
+                "terminal_words": [],
+                "children": {
+                  "b": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u025b": {
+                        "terminal_words": [],
+                        "children": {
+                          "k": {
+                            "terminal_words": [
+                              "quebec"
+                            ],
+                            "children": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "d": {
+        "terminal_words": [],
+        "children": {
+          "\u1d7b": {
+            "terminal_words": [],
+            "children": {
+              "k": {
+                "terminal_words": [],
+                "children": {
+                  "l": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u025b": {
+                        "terminal_words": [],
+                        "children": {
+                          "\u0279": {
+                            "terminal_words": [],
+                            "children": {
+                              "\u026a": {
+                                "terminal_words": [],
+                                "children": {
+                                  "\u014b": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "\u0250": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "n": {
+                                            "terminal_words": [],
+                                            "children": {
+                                              "\u026a": {
+                                                "terminal_words": [],
+                                                "children": {
+                                                  "m": {
+                                                    "terminal_words": [],
+                                                    "children": {
+                                                      "\u025c\u02d0": {
+                                                        "terminal_words": [],
+                                                        "children": {
+                                                          "d\u0292": {
+                                                            "terminal_words": [],
+                                                            "children": {
+                                                              "\u0259": {
+                                                                "terminal_words": [],
+                                                                "children": {
+                                                                  "n": {
+                                                                    "terminal_words": [],
+                                                                    "children": {
+                                                                      "s": {
+                                                                        "terminal_words": [],
+                                                                        "children": {
+                                                                          "i": {
+                                                                            "terminal_words": [
+                                                                              "declaring an emergency"
+                                                                            ],
+                                                                            "children": {}
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "\u025b": {
+            "terminal_words": [],
+            "children": {
+              "l": {
+                "terminal_words": [],
+                "children": {
+                  "t": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u0259": {
+                        "terminal_words": [
+                          "delta"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "\u026a": {
+            "terminal_words": [],
+            "children": {
+              "s": {
+                "terminal_words": [],
+                "children": {
+                  "\u0279": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u026a": {
+                        "terminal_words": [],
+                        "children": {
+                          "\u0261": {
+                            "terminal_words": [],
+                            "children": {
+                              "\u0251\u02d0\u0279": {
+                                "terminal_words": [],
+                                "children": {
+                                  "d": {
+                                    "terminal_words": [
+                                      "disregard"
+                                    ],
+                                    "children": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "\u025b": {
+        "terminal_words": [],
+        "children": {
+          "k": {
+            "terminal_words": [],
+            "children": {
+              "o\u028a": {
+                "terminal_words": [
+                  "echo"
+                ],
+                "children": {}
+              },
+              "s": {
+                "terminal_words": [],
+                "children": {
+                  "\u0279": {
+                    "terminal_words": [],
+                    "children": {
+                      "e\u026a": {
+                        "terminal_words": [
+                          "x-ray"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "e\u026a": {
+        "terminal_words": [],
+        "children": {
+          "t": {
+            "terminal_words": [
+              "eight"
+            ],
+            "children": {}
+          }
+        }
+      },
+      "f": {
+        "terminal_words": [],
+        "children": {
+          "a\u026a": {
+            "terminal_words": [],
+            "children": {
+              "v": {
+                "terminal_words": [
+                  "five"
+                ],
+                "children": {}
+              }
+            }
+          },
+          "\u0254\u02d0\u0279": {
+            "terminal_words": [
+              "four"
+            ],
+            "children": {}
+          },
+          "\u0251\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "k": {
+                "terminal_words": [],
+                "children": {
+                  "s": {
+                    "terminal_words": [],
+                    "children": {
+                      "t": {
+                        "terminal_words": [],
+                        "children": {
+                          "\u0279": {
+                            "terminal_words": [],
+                            "children": {
+                              "\u0251\u02d0": {
+                                "terminal_words": [],
+                                "children": {
+                                  "t": {
+                                    "terminal_words": [
+                                      "foxtrot"
+                                    ],
+                                    "children": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "\u0261": {
+        "terminal_words": [],
+        "children": {
+          "\u0251\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "l": {
+                "terminal_words": [],
+                "children": {
+                  "f": {
+                    "terminal_words": [
+                      "golf"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "h": {
+        "terminal_words": [],
+        "children": {
+          "o\u028a": {
+            "terminal_words": [],
+            "children": {
+              "t": {
+                "terminal_words": [],
+                "children": {
+                  "\u025b": {
+                    "terminal_words": [],
+                    "children": {
+                      "l": {
+                        "terminal_words": [
+                          "hotel"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "\u026a": {
+        "terminal_words": [],
+        "children": {
+          "n": {
+            "terminal_words": [],
+            "children": {
+              "d": {
+                "terminal_words": [],
+                "children": {
+                  "i": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u0259": {
+                        "terminal_words": [
+                          "india"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              },
+              "f": {
+                "terminal_words": [],
+                "children": {
+                  "\u025a": {
+                    "terminal_words": [],
+                    "children": {
+                      "m": {
+                        "terminal_words": [],
+                        "children": {
+                          "e\u026a": {
+                            "terminal_words": [],
+                            "children": {
+                              "\u0283": {
+                                "terminal_words": [],
+                                "children": {
+                                  "\u0259": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "n": {
+                                        "terminal_words": [
+                                          "information"
+                                        ],
+                                        "children": {}
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "d\u0292": {
+        "terminal_words": [],
+        "children": {
+          "u\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "l": {
+                "terminal_words": [],
+                "children": {
+                  "\u026a": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u025b": {
+                        "terminal_words": [],
+                        "children": {
+                          "t": {
+                            "terminal_words": [
+                              "juliet"
+                            ],
+                            "children": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "l": {
+        "terminal_words": [],
+        "children": {
+          "i\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "m": {
+                "terminal_words": [],
+                "children": {
+                  "\u0250": {
+                    "terminal_words": [
+                      "lima"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "m": {
+        "terminal_words": [],
+        "children": {
+          "a\u026a": {
+            "terminal_words": [],
+            "children": {
+              "k": {
+                "terminal_words": [
+                  "mike"
+                ],
+                "children": {}
+              }
+            }
+          },
+          "\u0251\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "n": {
+                "terminal_words": [],
+                "children": {
+                  "\u026a": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u027e": {
+                        "terminal_words": [],
+                        "children": {
+                          "\u025a": {
+                            "terminal_words": [],
+                            "children": {
+                              "\u0261": {
+                                "terminal_words": [],
+                                "children": {
+                                  "\u0279": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "a\u028a": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "n": {
+                                            "terminal_words": [],
+                                            "children": {
+                                              "d": {
+                                                "terminal_words": [
+                                                  "monitor ground"
+                                                ],
+                                                "children": {}
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "t": {
+                                "terminal_words": [],
+                                "children": {
+                                  "a\u028a": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "\u025a": {
+                                        "terminal_words": [
+                                          "monitor tower"
+                                        ],
+                                        "children": {}
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "n": {
+        "terminal_words": [],
+        "children": {
+          "a\u026a": {
+            "terminal_words": [],
+            "children": {
+              "n": {
+                "terminal_words": [],
+                "children": {
+                  "\u025a": {
+                    "terminal_words": [
+                      "niner"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          },
+          "o\u028a": {
+            "terminal_words": [],
+            "children": {
+              "v": {
+                "terminal_words": [],
+                "children": {
+                  "\u025b": {
+                    "terminal_words": [],
+                    "children": {
+                      "m": {
+                        "terminal_words": [],
+                        "children": {
+                          "b": {
+                            "terminal_words": [],
+                            "children": {
+                              "\u025a": {
+                                "terminal_words": [
+                                  "november"
+                                ],
+                                "children": {}
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "w": {
+        "terminal_words": [],
+        "children": {
+          "\u028c": {
+            "terminal_words": [],
+            "children": {
+              "n": {
+                "terminal_words": [
+                  "one"
+                ],
+                "children": {}
+              }
+            }
+          },
+          "\u026a": {
+            "terminal_words": [],
+            "children": {
+              "s": {
+                "terminal_words": [],
+                "children": {
+                  "k": {
+                    "terminal_words": [],
+                    "children": {
+                      "i": {
+                        "terminal_words": [
+                          "whiskey"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              },
+              "n": {
+                "terminal_words": [],
+                "children": {
+                  "d": {
+                    "terminal_words": [
+                      "wind"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "\u0251\u02d0": {
+        "terminal_words": [],
+        "children": {
+          "s": {
+            "terminal_words": [],
+            "children": {
+              "k": {
+                "terminal_words": [],
+                "children": {
+                  "\u025a": {
+                    "terminal_words": [
+                      "oscar"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "p": {
+        "terminal_words": [],
+        "children": {
+          "\u0251\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "p": {
+                "terminal_words": [],
+                "children": {
+                  "\u0259": {
+                    "terminal_words": [
+                      "papa"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "\u0279": {
+        "terminal_words": [],
+        "children": {
+          "\u1d7b": {
+            "terminal_words": [],
+            "children": {
+              "p": {
+                "terminal_words": [],
+                "children": {
+                  "\u0254\u02d0\u0279": {
+                    "terminal_words": [],
+                    "children": {
+                      "t": {
+                        "terminal_words": [
+                          "report"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o\u028a": {
+            "terminal_words": [],
+            "children": {
+              "m": {
+                "terminal_words": [],
+                "children": {
+                  "\u026a": {
+                    "terminal_words": [],
+                    "children": {
+                      "o\u028a": {
+                        "terminal_words": [
+                          "romeo"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "\u028c": {
+            "terminal_words": [],
+            "children": {
+              "n": {
+                "terminal_words": [],
+                "children": {
+                  "w": {
+                    "terminal_words": [],
+                    "children": {
+                      "e\u026a": {
+                        "terminal_words": [
+                          "runway"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "s": {
+        "terminal_words": [],
+        "children": {
+          "e\u026a": {
+            "terminal_words": [],
+            "children": {
+              "\u0250": {
+                "terminal_words": [],
+                "children": {
+                  "\u0261": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u025b": {
+                        "terminal_words": [],
+                        "children": {
+                          "n": {
+                            "terminal_words": [
+                              "say again"
+                            ],
+                            "children": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "\u025b": {
+            "terminal_words": [],
+            "children": {
+              "v": {
+                "terminal_words": [],
+                "children": {
+                  "\u0259": {
+                    "terminal_words": [],
+                    "children": {
+                      "n": {
+                        "terminal_words": [
+                          "seven"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "\u025b": {
+                "terminal_words": [],
+                "children": {
+                  "\u0279": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u0259": {
+                        "terminal_words": [
+                          "sierra"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "\u026a": {
+            "terminal_words": [],
+            "children": {
+              "k": {
+                "terminal_words": [],
+                "children": {
+                  "s": {
+                    "terminal_words": [
+                      "six"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "t": {
+        "terminal_words": [],
+        "children": {
+          "\u00e6": {
+            "terminal_words": [],
+            "children": {
+              "\u014b": {
+                "terminal_words": [],
+                "children": {
+                  "\u0261": {
+                    "terminal_words": [],
+                    "children": {
+                      "o\u028a": {
+                        "terminal_words": [
+                          "tango"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              },
+              "k": {
+                "terminal_words": [],
+                "children": {
+                  "s": {
+                    "terminal_words": [],
+                    "children": {
+                      "i": {
+                        "terminal_words": [],
+                        "children": {
+                          "v": {
+                            "terminal_words": [],
+                            "children": {
+                              "a\u026a\u0259": {
+                                "terminal_words": [
+                                  "taxi via"
+                                ],
+                                "children": {}
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "\u0279": {
+            "terminal_words": [],
+            "children": {
+              "i\u02d0": {
+                "terminal_words": [
+                  "tree"
+                ],
+                "children": {}
+              }
+            }
+          },
+          "\u025c\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "n": {
+                "terminal_words": [],
+                "children": {
+                  "l": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u025b": {
+                        "terminal_words": [],
+                        "children": {
+                          "f": {
+                            "terminal_words": [],
+                            "children": {
+                              "t": {
+                                "terminal_words": [
+                                  "turn left"
+                                ],
+                                "children": {}
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "\u0279": {
+                    "terminal_words": [],
+                    "children": {
+                      "a\u026a": {
+                        "terminal_words": [],
+                        "children": {
+                          "t": {
+                            "terminal_words": [
+                              "turn right"
+                            ],
+                            "children": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u\u02d0": {
+            "terminal_words": [
+              "two"
+            ],
+            "children": {}
+          }
+        }
+      },
+      "j": {
+        "terminal_words": [],
+        "children": {
+          "u\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "n": {
+                "terminal_words": [],
+                "children": {
+                  "\u026a": {
+                    "terminal_words": [],
+                    "children": {
+                      "f": {
+                        "terminal_words": [],
+                        "children": {
+                          "\u0254\u02d0\u0279": {
+                            "terminal_words": [],
+                            "children": {
+                              "m": {
+                                "terminal_words": [
+                                  "uniform"
+                                ],
+                                "children": {}
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "\u00e6": {
+            "terminal_words": [],
+            "children": {
+              "\u014b": {
+                "terminal_words": [],
+                "children": {
+                  "k": {
+                    "terminal_words": [],
+                    "children": {
+                      "i\u02d0": {
+                        "terminal_words": [
+                          "yankee"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "v": {
+        "terminal_words": [],
+        "children": {
+          "\u026a": {
+            "terminal_words": [],
+            "children": {
+              "k": {
+                "terminal_words": [],
+                "children": {
+                  "t": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u025a": {
+                        "terminal_words": [
+                          "victor"
+                        ],
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              },
+              "z": {
+                "terminal_words": [],
+                "children": {
+                  "\u1d7b": {
+                    "terminal_words": [],
+                    "children": {
+                      "b": {
+                        "terminal_words": [],
+                        "children": {
+                          "\u026a": {
+                            "terminal_words": [],
+                            "children": {
+                              "l": {
+                                "terminal_words": [],
+                                "children": {
+                                  "\u1d7b": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "\u027e": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "i": {
+                                            "terminal_words": [
+                                              "visibility"
+                                            ],
+                                            "children": {}
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "z": {
+        "terminal_words": [],
+        "children": {
+          "i\u0259": {
+            "terminal_words": [],
+            "children": {
+              "\u0279": {
+                "terminal_words": [],
+                "children": {
+                  "o\u028a": {
+                    "terminal_words": [
+                      "zero"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          },
+          "u\u02d0": {
+            "terminal_words": [],
+            "children": {
+              "l": {
+                "terminal_words": [],
+                "children": {
+                  "u\u02d0": {
+                    "terminal_words": [
+                      "zulu"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
