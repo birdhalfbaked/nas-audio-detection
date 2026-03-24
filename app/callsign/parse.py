@@ -120,6 +120,28 @@ def split_callsign_airline_and_digits(callsign: str) -> tuple[str, str] | None:
     return None
 
 
+def callsign_spokens_for_detect(callsigns: list[str]) -> tuple[list[str], dict[str, str]]:
+    """
+    Build detection phrase list and an output relabel map from comma-CLI-style callsigns.
+
+    Returns ``(spoken_phrases, spoken_to_canonical)`` where ``spoken_phrases`` are unique
+    strings to pass to the phonemizer (same as trie paths), and detections on those strings
+    should be displayed using ``spoken_to_canonical[spoken]`` (e.g. ``Delta 2323``).
+
+    Invalid or unparseable entries are skipped.
+    """
+    spoken_order: list[str] = []
+    to_canonical: dict[str, str] = {}
+    seen: set[str] = set()
+    for raw in callsigns:
+        for canonical, spoken in spoken_phrase_variants_for_callsign(raw):
+            if spoken not in seen:
+                seen.add(spoken)
+                spoken_order.append(spoken)
+            to_canonical[spoken] = canonical
+    return spoken_order, to_canonical
+
+
 def spoken_phrase_variants_for_callsign(callsign: str) -> list[tuple[str, str]]:
     """
     Return list of (canonical_label, spoken_phrase) for trie insertion.

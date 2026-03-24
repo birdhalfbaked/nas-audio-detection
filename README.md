@@ -38,6 +38,25 @@ This creates:
 
 If `espeak-ng` is missing, this script fails by design (to avoid silently generating a non-phoneme trie).
 
+## Build facility phraseology tries (per airport)
+
+Facility-specific tries layer on top of the common trie. Each airport in `data/facilities.json` gets a trie of nearby NAV fixes (pronunciations from `data/fixes.json`) within a great-circle radius (default **10 NM**).
+
+Prerequisites:
+
+- `data/fixes.json` from `uv run python scripts/build_nav_data.py` (that step requires `espeak-ng`)
+- `data/facilities.json` from `uv run python scripts/reload_facilities.py` (or your own list with `identifier`, `lat`, `lon`)
+
+This script only packages precomputed phoneme paths into tries; it does **not** invoke espeak itself.
+
+```bash
+uv run python scripts/build_facility_tries.py
+```
+
+Options: `--radius-nm 10` (nautical miles), `--limit N` (dry-run on first N airports).
+
+Output directory: `data/facility_data/` (`<identifier.lower()>_trie.json`). Empty-radius facilities remove any existing trie file so old ARTCC-based files are not left behind.
+
 ## CLI
 
 Main entrypoint:

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import copy
 from dataclasses import dataclass, field
 from typing import Callable
 
@@ -41,6 +42,24 @@ class PhonemeTrie:
     def insert_many(self, words: list[str]) -> None:
         for word in words:
             self.insert(word)
+
+    def copy(self) -> "PhonemeTrie":
+        return PhonemeTrie.from_dict(self._phonemizer, self.to_dict())
+
+    def merge_from(self, other: "PhonemeTrie") -> None:
+        """Union ``other`` into this trie (shared prefixes combine ``terminal_words``)."""
+        def merge_into(a: _TrieNode, b: _TrieNode) -> None:
+            a.terminal_words |= b.terminal_words
+            for ph, b_child in b.children.items():
+                if ph in a.children:
+                    merge_into(a.children[ph], b_child)
+                else:
+                    a.children[ph] = copy.deepcopy(b_child)
+
+        merge_into(self._root, other._root)
+        self._max_word_phoneme_len = max(
+            self._max_word_phoneme_len, other._max_word_phoneme_len
+        )
 
     def words(self) -> list[str]:
         return sorted(self._collect_words(self._root))

@@ -1,5 +1,5 @@
 {
-  "max_word_phoneme_len": 18,
+  "max_word_phoneme_len": 16,
   "root": {
     "terminal_words": [],
     "children": {
@@ -43,31 +43,26 @@
       "b": {
         "terminal_words": [],
         "children": {
-          "i\u02d0": {
+          "i\u02d0\u0250": {
             "terminal_words": [],
             "children": {
-              "\u0250": {
+              "d": {
                 "terminal_words": [],
                 "children": {
-                  "d": {
+                  "v": {
                     "terminal_words": [],
                     "children": {
-                      "v": {
+                      "a\u026a": {
                         "terminal_words": [],
                         "children": {
-                          "a\u026a": {
+                          "z": {
                             "terminal_words": [],
                             "children": {
-                              "z": {
-                                "terminal_words": [],
-                                "children": {
-                                  "d": {
-                                    "terminal_words": [
-                                      "be advised"
-                                    ],
-                                    "children": {}
-                                  }
-                                }
+                              "d": {
+                                "terminal_words": [
+                                  "be advised"
+                                ],
+                                "children": {}
                               }
                             }
                           }
@@ -132,36 +127,26 @@
               "\u026a\u0279": {
                 "terminal_words": [],
                 "children": {
-                  "d": {
+                  "df": {
                     "terminal_words": [],
                     "children": {
-                      "f": {
+                      "\u0254\u02d0\u0279t": {
                         "terminal_words": [],
                         "children": {
-                          "\u0254\u02d0\u0279": {
+                          "e\u026a": {
                             "terminal_words": [],
                             "children": {
-                              "t": {
+                              "k": {
                                 "terminal_words": [],
                                 "children": {
-                                  "e\u026a": {
+                                  "\u0254": {
                                     "terminal_words": [],
                                     "children": {
-                                      "k": {
-                                        "terminal_words": [],
-                                        "children": {
-                                          "\u0254": {
-                                            "terminal_words": [],
-                                            "children": {
-                                              "f": {
-                                                "terminal_words": [
-                                                  "cleared for takeoff"
-                                                ],
-                                                "children": {}
-                                              }
-                                            }
-                                          }
-                                        }
+                                      "f": {
+                                        "terminal_words": [
+                                          "cleared for takeoff"
+                                        ],
+                                        "children": {}
                                       }
                                     }
                                   }
@@ -170,31 +155,26 @@
                             }
                           }
                         }
-                      },
-                      "t": {
+                      }
+                    }
+                  },
+                  "dt": {
+                    "terminal_words": [],
+                    "children": {
+                      "\u0259l": {
                         "terminal_words": [],
                         "children": {
-                          "\u0259": {
+                          "\u00e6": {
                             "terminal_words": [],
                             "children": {
-                              "l": {
+                              "n": {
                                 "terminal_words": [],
                                 "children": {
-                                  "\u00e6": {
-                                    "terminal_words": [],
-                                    "children": {
-                                      "n": {
-                                        "terminal_words": [],
-                                        "children": {
-                                          "d": {
-                                            "terminal_words": [
-                                              "cleared to land"
-                                            ],
-                                            "children": {}
-                                          }
-                                        }
-                                      }
-                                    }
+                                  "d": {
+                                    "terminal_words": [
+                                      "cleared to land"
+                                    ],
+                                    "children": {}
                                   }
                                 }
                               }
@@ -223,107 +203,76 @@
                           "k": {
                             "terminal_words": [],
                             "children": {
-                              "t": {
+                              "t\u0250": {
                                 "terminal_words": [],
                                 "children": {
-                                  "\u0250": {
-                                    "terminal_words": [],
-                                    "children": {
-                                      "p": {
-                                        "terminal_words": [],
-                                        "children": {
-                                          "\u0279": {
-                                            "terminal_words": [],
-                                            "children": {
-                                              "o\u028a": {
-                                                "terminal_words": [],
-                                                "children": {
-                                                  "t\u0283": {
-                                                    "terminal_words": [
-                                                      "contact approach"
-                                                    ],
-                                                    "children": {}
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  },
-                                  "s": {
-                                    "terminal_words": [],
-                                    "children": {
-                                      "\u025b": {
-                                        "terminal_words": [],
-                                        "children": {
-                                          "n": {
-                                            "terminal_words": [],
-                                            "children": {
-                                              "t": {
-                                                "terminal_words": [],
-                                                "children": {
-                                                  "\u025a": {
-                                                    "terminal_words": [
-                                                      "contact center"
-                                                    ],
-                                                    "children": {}
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  },
-                                  "d": {
-                                    "terminal_words": [],
-                                    "children": {
-                                      "\u1d7b": {
-                                        "terminal_words": [],
-                                        "children": {
-                                          "p": {
-                                            "terminal_words": [],
-                                            "children": {
-                                              "\u0251\u02d0\u0279": {
-                                                "terminal_words": [],
-                                                "children": {
-                                                  "t\u0283": {
-                                                    "terminal_words": [],
-                                                    "children": {
-                                                      "\u025a": {
-                                                        "terminal_words": [
-                                                          "contact departure"
-                                                        ],
-                                                        "children": {}
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  },
-                                  "\u0261": {
+                                  "p": {
                                     "terminal_words": [],
                                     "children": {
                                       "\u0279": {
                                         "terminal_words": [],
                                         "children": {
-                                          "a\u028a": {
+                                          "o\u028a": {
                                             "terminal_words": [],
                                             "children": {
-                                              "n": {
+                                              "t\u0283": {
+                                                "terminal_words": [
+                                                  "contact approach"
+                                                ],
+                                                "children": {}
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "ts": {
+                                "terminal_words": [],
+                                "children": {
+                                  "\u025b": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "n": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "t": {
+                                            "terminal_words": [],
+                                            "children": {
+                                              "\u025a": {
+                                                "terminal_words": [
+                                                  "contact center"
+                                                ],
+                                                "children": {}
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "td": {
+                                "terminal_words": [],
+                                "children": {
+                                  "\u1d7b": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "p": {
+                                        "terminal_words": [],
+                                        "children": {
+                                          "\u0251\u02d0\u0279": {
+                                            "terminal_words": [],
+                                            "children": {
+                                              "t\u0283": {
                                                 "terminal_words": [],
                                                 "children": {
-                                                  "d": {
+                                                  "\u025a": {
                                                     "terminal_words": [
-                                                      "contact ground"
+                                                      "contact departure"
                                                     ],
                                                     "children": {}
                                                   }
@@ -334,20 +283,46 @@
                                         }
                                       }
                                     }
-                                  },
-                                  "t": {
+                                  }
+                                }
+                              },
+                              "t\u0261": {
+                                "terminal_words": [],
+                                "children": {
+                                  "\u0279": {
                                     "terminal_words": [],
                                     "children": {
                                       "a\u028a": {
                                         "terminal_words": [],
                                         "children": {
-                                          "\u025a": {
-                                            "terminal_words": [
-                                              "contact tower"
-                                            ],
-                                            "children": {}
+                                          "n": {
+                                            "terminal_words": [],
+                                            "children": {
+                                              "d": {
+                                                "terminal_words": [
+                                                  "contact ground"
+                                                ],
+                                                "children": {}
+                                              }
+                                            }
                                           }
                                         }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "tt": {
+                                "terminal_words": [],
+                                "children": {
+                                  "a\u028a": {
+                                    "terminal_words": [],
+                                    "children": {
+                                      "\u025a": {
+                                        "terminal_words": [
+                                          "contact tower"
+                                        ],
+                                        "children": {}
                                       }
                                     }
                                   }
@@ -428,45 +403,35 @@
                               "\u026a": {
                                 "terminal_words": [],
                                 "children": {
-                                  "\u014b": {
+                                  "\u014b\u0250": {
                                     "terminal_words": [],
                                     "children": {
-                                      "\u0250": {
+                                      "n\u026a": {
                                         "terminal_words": [],
                                         "children": {
-                                          "n": {
+                                          "m": {
                                             "terminal_words": [],
                                             "children": {
-                                              "\u026a": {
+                                              "\u025c\u02d0": {
                                                 "terminal_words": [],
                                                 "children": {
-                                                  "m": {
+                                                  "d\u0292": {
                                                     "terminal_words": [],
                                                     "children": {
-                                                      "\u025c\u02d0": {
+                                                      "\u0259": {
                                                         "terminal_words": [],
                                                         "children": {
-                                                          "d\u0292": {
+                                                          "n": {
                                                             "terminal_words": [],
                                                             "children": {
-                                                              "\u0259": {
+                                                              "s": {
                                                                 "terminal_words": [],
                                                                 "children": {
-                                                                  "n": {
-                                                                    "terminal_words": [],
-                                                                    "children": {
-                                                                      "s": {
-                                                                        "terminal_words": [],
-                                                                        "children": {
-                                                                          "i": {
-                                                                            "terminal_words": [
-                                                                              "declaring an emergency"
-                                                                            ],
-                                                                            "children": {}
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
+                                                                  "i": {
+                                                                    "terminal_words": [
+                                                                      "declaring an emergency"
+                                                                    ],
+                                                                    "children": {}
                                                                   }
                                                                 }
                                                               }
@@ -843,48 +808,43 @@
                       "\u027e": {
                         "terminal_words": [],
                         "children": {
-                          "\u025a": {
+                          "\u025a\u0261": {
                             "terminal_words": [],
                             "children": {
-                              "\u0261": {
+                              "\u0279": {
                                 "terminal_words": [],
                                 "children": {
-                                  "\u0279": {
+                                  "a\u028a": {
                                     "terminal_words": [],
                                     "children": {
-                                      "a\u028a": {
+                                      "n": {
                                         "terminal_words": [],
                                         "children": {
-                                          "n": {
-                                            "terminal_words": [],
-                                            "children": {
-                                              "d": {
-                                                "terminal_words": [
-                                                  "monitor ground"
-                                                ],
-                                                "children": {}
-                                              }
-                                            }
+                                          "d": {
+                                            "terminal_words": [
+                                              "monitor ground"
+                                            ],
+                                            "children": {}
                                           }
                                         }
                                       }
                                     }
                                   }
                                 }
-                              },
-                              "t": {
+                              }
+                            }
+                          },
+                          "\u025at": {
+                            "terminal_words": [],
+                            "children": {
+                              "a\u028a": {
                                 "terminal_words": [],
                                 "children": {
-                                  "a\u028a": {
-                                    "terminal_words": [],
-                                    "children": {
-                                      "\u025a": {
-                                        "terminal_words": [
-                                          "monitor tower"
-                                        ],
-                                        "children": {}
-                                      }
-                                    }
+                                  "\u025a": {
+                                    "terminal_words": [
+                                      "monitor tower"
+                                    ],
+                                    "children": {}
                                   }
                                 }
                               }
@@ -1110,28 +1070,44 @@
           }
         }
       },
+      "\u0251\u02d0\u0279": {
+        "terminal_words": [],
+        "children": {
+          "n": {
+            "terminal_words": [],
+            "children": {
+              "\u00e6": {
+                "terminal_words": [],
+                "children": {
+                  "v": {
+                    "terminal_words": [
+                      "rnav"
+                    ],
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "s": {
         "terminal_words": [],
         "children": {
-          "e\u026a": {
+          "e\u026a\u0250": {
             "terminal_words": [],
             "children": {
-              "\u0250": {
+              "\u0261": {
                 "terminal_words": [],
                 "children": {
-                  "\u0261": {
+                  "\u025b": {
                     "terminal_words": [],
                     "children": {
-                      "\u025b": {
-                        "terminal_words": [],
-                        "children": {
-                          "n": {
-                            "terminal_words": [
-                              "say again"
-                            ],
-                            "children": {}
-                          }
-                        }
+                      "n": {
+                        "terminal_words": [
+                          "say again"
+                        ],
+                        "children": {}
                       }
                     }
                   }
@@ -1227,19 +1203,14 @@
                   "s": {
                     "terminal_words": [],
                     "children": {
-                      "i": {
+                      "iv": {
                         "terminal_words": [],
                         "children": {
-                          "v": {
-                            "terminal_words": [],
-                            "children": {
-                              "a\u026a\u0259": {
-                                "terminal_words": [
-                                  "taxi via"
-                                ],
-                                "children": {}
-                              }
-                            }
+                          "a\u026a\u0259": {
+                            "terminal_words": [
+                              "taxi via"
+                            ],
+                            "children": {}
                           }
                         }
                       }
@@ -1263,43 +1234,38 @@
           "\u025c\u02d0": {
             "terminal_words": [],
             "children": {
-              "n": {
+              "nl": {
                 "terminal_words": [],
                 "children": {
-                  "l": {
+                  "\u025b": {
                     "terminal_words": [],
                     "children": {
-                      "\u025b": {
-                        "terminal_words": [],
-                        "children": {
-                          "f": {
-                            "terminal_words": [],
-                            "children": {
-                              "t": {
-                                "terminal_words": [
-                                  "turn left"
-                                ],
-                                "children": {}
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "\u0279": {
-                    "terminal_words": [],
-                    "children": {
-                      "a\u026a": {
+                      "f": {
                         "terminal_words": [],
                         "children": {
                           "t": {
                             "terminal_words": [
-                              "turn right"
+                              "turn left"
                             ],
                             "children": {}
                           }
                         }
+                      }
+                    }
+                  }
+                }
+              },
+              "n\u0279": {
+                "terminal_words": [],
+                "children": {
+                  "a\u026a": {
+                    "terminal_words": [],
+                    "children": {
+                      "t": {
+                        "terminal_words": [
+                          "turn right"
+                        ],
+                        "children": {}
                       }
                     }
                   }

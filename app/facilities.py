@@ -72,10 +72,27 @@ class Facility:
         )
 
     def phrases(self) -> list[str]:
-        phrases = self.common_phraseology_trie.words()
+        phrases, _ = self.phrases_with_sources()
+        return phrases
+
+    def phrases_with_sources(self) -> tuple[list[str], dict[str, str]]:
+        """
+        Ordered phrase list and a map ``phrase -> phraseology_source``.
+
+        ``common`` entries come from the global trie; ``facility`` from the airport trie
+        (fix names, etc.). Words present in both are tagged ``common``.
+        """
+        sources: dict[str, str] = {}
+        ordered: list[str] = []
+        for w in self.common_phraseology_trie.words():
+            sources[w] = "common"
+            ordered.append(w)
         if self.facility_trie is not None:
-            phrases.extend(self.facility_trie.words())
-        return list(dict.fromkeys(phrases))
+            for w in self.facility_trie.words():
+                if w not in sources:
+                    sources[w] = "facility"
+                    ordered.append(w)
+        return ordered, sources
 
     def build_callsign_trie(self) -> PhonemeTrie | None:
         """

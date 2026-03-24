@@ -2,6 +2,7 @@ from types import SimpleNamespace
 
 import numpy as np
 
+from app.audio.detection_quality import dedupe_same_phrase_nms_and_cooldown
 from app.audio.processor import AudioTranscriber
 from app.audio.phrase_tagger import KeyPhraseSegment
 
@@ -129,3 +130,203 @@ def test_overlap_resolution_prefers_higher_confidence_detection() -> None:
 
     assert len(resolved) == 1
     assert resolved[0].phrase == "contact departure"
+
+
+def test_overlap_resolution_prefers_common_over_facility_when_distances_equal() -> None:
+    detections = [
+        KeyPhraseSegment(
+            phrase="alpha",
+            start_s=1.0,
+            end_s=2.0,
+            distance=2,
+            normalized_distance=0.2,
+            matched_phonemes=["a"],
+            phraseology_source="common",
+            target_phoneme_len=5,
+        ),
+        KeyPhraseSegment(
+            phrase="bravo",
+            start_s=1.0,
+            end_s=2.0,
+            distance=2,
+            normalized_distance=0.2,
+            matched_phonemes=["a"],
+            phraseology_source="facility",
+            target_phoneme_len=5,
+        ),
+    ]
+
+    resolved = AudioTranscriber._resolve_overlapping_detections(
+        detections=detections, overlap_threshold=0.5
+    )
+
+    assert len(resolved) == 1
+    assert resolved[0].phrase == "alpha"
+    assert resolved[0].phraseology_source == "common"
+
+
+def test_overlap_resolution_prefers_facility_when_it_fits_better() -> None:
+    detections = [
+        KeyPhraseSegment(
+            phrase="alpha",
+            start_s=1.0,
+            end_s=2.0,
+            distance=3,
+            normalized_distance=0.35,
+            matched_phonemes=["a"],
+            phraseology_source="common",
+            target_phoneme_len=8,
+        ),
+        KeyPhraseSegment(
+            phrase="bravo",
+            start_s=1.0,
+            end_s=2.0,
+            distance=1,
+            normalized_distance=0.15,
+            matched_phonemes=["a"],
+            phraseology_source="facility",
+            target_phoneme_len=6,
+        ),
+    ]
+
+    resolved = AudioTranscriber._resolve_overlapping_detections(
+        detections=detections, overlap_threshold=0.5
+    )
+
+    assert len(resolved) == 1
+    assert resolved[0].phrase == "bravo"
+
+
+def test_overlap_resolution_allows_nested_hit_when_overlap_is_small_vs_longer_span() -> None:
+    """Short detection inside a longer one: ratio uses max(duration), so both can survive."""
+    detections = [
+        KeyPhraseSegment(
+            phrase="short",
+            start_s=1.0,
+            end_s=1.5,
+            distance=1,
+            normalized_distance=0.1,
+            matched_phonemes=["x"],
+            phraseology_source="common",
+        ),
+        KeyPhraseSegment(
+            phrase="longer",
+            start_s=1.0,
+            end_s=2.5,
+            distance=1,
+            normalized_distance=0.1,
+            matched_phonemes=["x"],
+            phraseology_source="common",
+        ),
+    ]
+
+    resolved = AudioTranscriber._resolve_overlapping_detections(
+        detections=detections, overlap_threshold=0.5
+    )
+
+    assert len(resolved) == 2
+    phrases = {r.phrase for r in resolved}
+    assert phrases == {"short", "longer"}
+
+
+def test_dedupe_same_phrase_cooldown_keeps_best_composite_first() -> None:
+    a = KeyPhraseSegment(
+        phrase="Delta 2323",
+        start_s=0.1,
+        end_s=0.5,
+        distance=8,
+        normalized_distance=0.73,
+        matched_phonemes=[],
+        phraseology_source="callsign",
+        target_phoneme_len=11,
+        composite_score=0.73,
+    )
+    b = KeyPhraseSegment(
+        phrase="Delta 2323",
+        start_s=0.4,
+        end_s=1.2,
+        distance=13,
+        normalized_distance=0.68,
+        matched_phonemes=[],
+        phraseology_source="callsign",
+        target_phoneme_len=11,
+        composite_score=0.68,
+    )
+    out = dedupe_same_phrase_nms_and_cooldown([a, b], iou_threshold=0.5, cooldown_s=0.75)
+    assert len(out) == 1
+    assert out[0].phrase == "Delta 2323"
+    assert out[0].composite_score == 0.68
+
+
+def test_dedupe_contact_common_keeps_one_per_overlap_cluster() -> None:
+    approach = KeyPhraseSegment(
+        phrase="contact approach",
+        start_s=1.0,
+        end_s=1.7,
+        distance=0,
+        normalized_distance=0.3,
+        matched_phonemes=[],
+        phraseology_source="common",
+        target_phoneme_len=10,
+        composite_score=0.3,
+    )
+    departure = KeyPhraseSegment(
+        phrase="contact departure",
+        start_s=1.0,
+        end_s=1.8,
+        distance=0,
+        normalized_distance=0.2,
+        matched_phonemes=[],
+        phraseology_source="common",
+        target_phoneme_len=12,
+        composite_score=0.2,
+    )
+    out = AudioTranscriber._dedupe_overlapping_contact_common([approach, departure])
+    assert len(out) == 1
+    assert out[0].phrase == "contact departure"
+
+
+def test_hybrid_sliding_common_and_streaming_facility_large_vocab() -> None:
+    """Sliding windows for common ATC; facility-only trie beam for large fix vocab."""
+    cd = [
+        "k",
+        "ɑː",
+        "n",
+        "t",
+        "æ",
+        "k",
+        "t",
+        "d",
+        "ɪ",
+        "p",
+        "ɑː",
+        "tʃ",
+        "ɚ",
+    ]
+    fac = [f"F{i}" for i in range(180)]
+
+    def phon(w: str) -> list[str]:
+        if w == "contact departure":
+            return cd
+        return [f"z{i}" for i, _ in enumerate(w)]  # unique multiphone to inflate trie width
+
+    phrase_sources = dict.fromkeys(fac, "facility")
+    phrase_sources["contact departure"] = "common"
+    key_phrases = ["contact departure"] + fac
+
+    segs = [
+        {"phoneme": p, "start_s": round(i * 0.2, 3), "end_s": round((i + 1) * 0.2, 3)}
+        for i, p in enumerate(cd)
+    ]
+
+    transcriber = AudioTranscriber(phrase_phonemizer=phon)
+    transcriber.transcribe_phonemes = lambda **kwargs: segs  # type: ignore[method-assign]
+
+    hits = transcriber(
+        np.zeros(8, dtype=np.float32),
+        key_phrases,
+        phrase_sources=phrase_sources,
+        streaming_beam_width=48,
+    )
+
+    assert any(h.phrase == "contact departure" and h.distance == 0 for h in hits)

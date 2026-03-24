@@ -38,3 +38,15 @@ def test_phoneme_trie_beam_search_returns_best_candidates() -> None:
 
     assert results[0] == "students"
     assert "student" in results
+
+
+def test_phoneme_trie_merge_from_unions_terminals() -> None:
+    def phon(w: str) -> list[str]:
+        return list(w)
+
+    a = PhonemeTrie(phonemizer=phon)
+    a.insert_phoneme_path(["a", "b"], "one")
+    b = PhonemeTrie(phonemizer=phon)
+    b.insert_phoneme_path(["a", "b"], "two")
+    a.merge_from(b)
+    assert sorted(a.words()) == ["one", "two"]
